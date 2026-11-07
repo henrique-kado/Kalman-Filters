@@ -119,12 +119,15 @@ def kalman_correc(x_pred, P_pred, y, R, C):
     with the matching rows of C and rows/cols of R (wall not visible, C5).
     If every entry is NaN, skip correction: return x_pred, P_pred, None, None."""
 
+
 def kalman_predict(x_corr, P_corr, u, Q, A):
     """Return x_pred, P_pred for k+1."""
+
 
 def kalman(x_pred, P_pred, u, y, Q, R, A, C):
     """One full cycle (corrector then predictor).
     Return x_pred_next, P_pred_next, x_corr, P_corr."""
+
 
 # ekf.py
 def ekf_correc(x_pred, P_pred, y, R, g, jac_g): ...
