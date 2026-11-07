@@ -15,7 +15,7 @@ for consistency.
 
 | #  | Chapter                                                     | Lecture | Status |
 |----|-------------------------------------------------------------|---------|--------|
-| 01 | Linear least squares                                        | C1      | 🚧     |
+| 01 | Linear least squares                                        | C1      | ✅     |
 | 02 | Nonlinear estimation: Gauss–Newton, Monte-Carlo, annealing  | C2      | 🚧     |
 | 03 | Covariance, confidence ellipse, optimal linear estimator    | C3      | 🚧     |
 | 04 | Discrete Kalman filter                                      | C4      | 🚧     |
