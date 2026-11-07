@@ -1,0 +1,12 @@
+version: 1
+project:
+  title: Kalman Filters from Scratch
+  authors:
+    - name: Henrique Yuiti Kado
+  github: https://github.com/henrique-kado/Kalman-Filters
+  license: MIT
+  toc:
+    - file: index.md
+    - file: notation.md
+site:
+  template: book-theme
