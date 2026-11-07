@@ -47,8 +47,9 @@ def quadratic_minimizer(W: np.ndarray, L: np.ndarray) -> np.ndarray:
     ``W`` must be symmetric positive definite; otherwise ``q`` has no unique minimum and the
     function raises ``ValueError``. Solve a linear system; do not form ``W^{-1}``.
     """
-    if not np.all(np.linalg.eigvals(W) > 0):
-        raise ValueError("W must be symmetric positive definite.")
+    if not np.allclose(W, W.transpose()):
+        raise ValueError("W must be symmetric")
+    np.linalg.cholesky(W)  # raises LinAlgError if not positive definite
     x_star = np.linalg.solve(2 * W, -L)
     return x_star
 
