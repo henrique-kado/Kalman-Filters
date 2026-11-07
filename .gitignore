@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Notebooks are stored as MyST Markdown (Jupytext); no .ipynb in git
+*.ipynb
+
+# Jupyter Book build output
+book/_build/
