@@ -29,7 +29,7 @@ jobs:
         working-directory: book
         env:
           BASE_URL: /Kalman-Filters
-        run: uv run jupyter book build --html
+        run: uv run jupyter book build --html --execute
       - uses: actions/upload-pages-artifact@v4
         with:
           path: book/_build/html

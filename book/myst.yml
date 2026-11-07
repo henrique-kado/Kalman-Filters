@@ -8,5 +8,6 @@ project:
   toc:
     - file: index.md
     - file: notation.md
+    - file: ch01-least-squares.md
 site:
   template: book-theme

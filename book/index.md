@@ -13,7 +13,7 @@ reading any chapter.
 
 | #  | Chapter                                                          | Lecture | Status  |
 |----|------------------------------------------------------------------|---------|---------|
-| 01 | Linear least squares                                             | C1      | planned |
+| 01 | [Linear least squares](ch01-least-squares.md)                    | C1      | done    |
 | 02 | Nonlinear estimation: Gauss–Newton, Monte-Carlo, simulated annealing | C2  | planned |
 | 03 | Covariance, confidence ellipse, optimal linear estimator         | C3      | planned |
 | 04 | Discrete Kalman filter                                           | C4      | planned |
