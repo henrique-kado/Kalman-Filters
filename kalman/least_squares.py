@@ -49,7 +49,10 @@ def quadratic_minimizer(W: np.ndarray, L: np.ndarray) -> np.ndarray:
     """
     if not np.allclose(W, W.transpose()):
         raise ValueError("W must be symmetric")
-    np.linalg.cholesky(W)  # raises LinAlgError if not positive definite
+    try:
+        np.linalg.cholesky(W)
+    except np.linalg.LinAlgError:
+        raise ValueError("W must be positive definite") from None
     x_star = np.linalg.solve(2 * W, -L)
     return x_star
 

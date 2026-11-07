@@ -93,6 +93,7 @@ def test_quadratic_minimizer_zero_gradient_and_minimum():
     [
         np.array([[1.0, 0.0], [0.0, -1.0]]),  # saddle
         np.array([[1.0, 0.0], [0.0, 0.0]]),  # flat direction
+        np.array([[1.0, 4.0], [0.0, 1.0]]),  # nonsymmetric, indefinite symmetric part
     ],
 )
 def test_quadratic_minimizer_rejects_non_positive_definite(W):
